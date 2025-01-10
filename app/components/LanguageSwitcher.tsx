@@ -1,10 +1,11 @@
 import React from 'react';
 import { useLocalization } from '../hooks/useLocalization';
 import styles from './LanguageSwitcher.module.css';
+import useDocumentDirection from '../hooks/useDocumentDirection';
 
 const LanguageSwitcher = () => {
-  const { setLanguage, t } = useLocalization();
-
+  const { setLanguage, language } = useLocalization();
+  useDocumentDirection(language);
 
 
   return (
