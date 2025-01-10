@@ -21,7 +21,6 @@ class LocalizedStrings {
       throw new Error(`Language '${language}' is not supported.`);
     }
     this.currentLanguage = language;
-    console.log(`Language set to: ${language}`);
     this.notifyListeners(); // Notify all listeners
   }
 
