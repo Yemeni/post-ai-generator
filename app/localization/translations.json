@@ -1,0 +1,15 @@
+{
+  "hello": { "en": "Hello", "ar": "مرحبا", "de": "Hallo" },
+  "bismillah": { "en": "In the name of Allah", "ar": "بسم الله", "de": "Im Namen Allahs" },
+  "generate_text": { "en": "Generate Text", "ar": "إنشاء النص", "de": "Text erstellen" },
+  "step_1": { "en": "Step 1: Enter your text", "ar": "الخطوة 1: أدخل النص", "de": "Schritt 1: Geben Sie Ihren Text ein" },
+  "step_2": { "en": "Step 2: Choose a tone", "ar": "الخطوة 2: اختر النغمة", "de": "Schritt 2: Wählen Sie einen Ton" },
+  "tone_funny": { "en": "Funny", "ar": "مضحك", "de": "Lustig" },
+  "tone_inspirational": { "en": "Inspirational", "ar": "ملهم", "de": "Inspirierend" },
+  "tone_casual": { "en": "Casual", "ar": "غير رسمي", "de": "Lässig" },
+  "image_option": { "en": "Generate an image", "ar": "إنشاء صورة", "de": "Bild erstellen" },
+  "generate_button": { "en": "Generate", "ar": "إنشاء", "de": "Erstellen" },
+  "loading": { "en": "Loading...", "ar": "جاري التحميل...", "de": "Wird geladen..." },
+  "error": { "en": "Error", "ar": "خطأ", "de": "Fehler" },
+  "tweet_placeholder": { "en": "Write something here...", "ar": "اكتب شيئًا هنا...", "de": "Schreiben Sie etwas hier..." }
+}
