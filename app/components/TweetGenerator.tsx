@@ -4,6 +4,7 @@ import Tweet from './Tweet';
 import styles from './tweetgenerator.module.css';
 import { useLocalization } from '@/app/hooks/useLocalization';
 import SocialShare from './SocialShare';
+import ClipboardButton from "@/app/components/ClipboardButton";
 
 const TweetGenerator = () => {
   const [tweetText, setTweetText] = useState('');
@@ -148,6 +149,8 @@ const TweetGenerator = () => {
       {error && <p className={styles.error}>{error}</p>}
       {generatedTweet && <Tweet tweet={generatedTweet} imageSrc={imageUrl} />}
       <SocialShare text={generatedTweet} url={url} imageUrl={imageUrl} />
+
+      <ClipboardButton textToCopy={generatedTweet} />
     </div>
   );
 };
