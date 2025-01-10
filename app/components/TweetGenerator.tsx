@@ -3,6 +3,7 @@ import { useChat } from 'ai/react';
 import Tweet from './Tweet';
 import styles from './tweetgenerator.module.css';
 import { useLocalization } from '@/app/hooks/useLocalization';
+import SocialShare from './SocialShare';
 
 const TweetGenerator = () => {
   const [tweetText, setTweetText] = useState('');
@@ -15,6 +16,9 @@ const TweetGenerator = () => {
   const [disableSubmitButton, setDisableSubmitButton] = useState(true);
 
   const { t } = useLocalization();
+  const url = "https://ogp.me/";
+
+
 
   const { handleInputChange, handleSubmit } = useChat({
     api: '/api/gpt',
@@ -143,6 +147,7 @@ const TweetGenerator = () => {
       {loading && <p>{t('loading')}</p>}
       {error && <p className={styles.error}>{error}</p>}
       {generatedTweet && <Tweet tweet={generatedTweet} imageSrc={imageUrl} />}
+      <SocialShare text={generatedTweet} url={url} imageUrl={imageUrl} />
     </div>
   );
 };
